@@ -16,7 +16,7 @@ public class NutritionalFacts {
     public int getCarbo(){
         return carbo;
     }
-
+    /****/
     public static class Builder {
         private int sodium;
         private int fat;
@@ -36,7 +36,7 @@ public class NutritionalFacts {
             this.carbo = c;
             return this;
         }
-
+        
         public NutritionalFacts build() {
         	System.out.println("NutrionalFacts builded.");
             return new NutritionalFacts(this);
