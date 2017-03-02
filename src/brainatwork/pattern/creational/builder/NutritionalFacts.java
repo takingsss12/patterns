@@ -38,7 +38,7 @@ public class NutritionalFacts {
         }
 
         public NutritionalFacts build() {
-        	System.out.println("NutrionalFacts builded.");
+        	System.out.println("NutrionalFacts object builded.");
             return new NutritionalFacts(this);
         }
     }
