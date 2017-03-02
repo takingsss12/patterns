@@ -1,4 +1,4 @@
-package brainatwork.pattern.creationl.builder;
+package brainatwork.pattern.creational.builder;
 
 public class Main {
 	public static void main(String[] argv){
