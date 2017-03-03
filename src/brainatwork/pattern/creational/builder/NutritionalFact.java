@@ -38,7 +38,8 @@ public class NutritionalFact {
         }
         
         public NutritionalFact build() {
-        	System.out.println("NutrionalFacts builded.");
+        	System.out.println("NutrionalFact builded.");
+        	System.out.println("Sodium: " + this.sodium + " Fat: " + this.fat + " Carbo: " + this.carbo);
             return new NutritionalFact(this);
         }
     }
