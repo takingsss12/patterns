@@ -1,5 +1,7 @@
 package brainatwork.pattern.creational.builder2;
-
+/**
+ * Builder implementation
+ */
 class CarBuilderImpl implements CarBuilder {
     private Car car;
 
