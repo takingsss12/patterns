@@ -15,5 +15,6 @@ public class Main {
 
 	      //call draw method of circle
 	      shape2.draw();
+	      
 	   }
 }
