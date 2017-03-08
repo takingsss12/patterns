@@ -16,6 +16,7 @@ public class User {
 	 * The User constructor is private, which means that this class can not be
 	 * directly instantiated from the client code.
 	 */
+	
 	private User(UserBuilder builder) {
 		this.firstName = builder.firstName;
 		this.lastName = builder.lastName;
