@@ -92,7 +92,7 @@ public class User {
 			return user;
 		}
 		
-//      	example of not thread-safe code:
+//      example of not thread-safe code:
 //		public User build() {
 //			 if (age > 120) {
 //			   throw new IllegalStateException(age out of range); // bad, not thread-safe
