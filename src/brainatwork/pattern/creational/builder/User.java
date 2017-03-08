@@ -4,6 +4,7 @@ package brainatwork.pattern.creational.builder;
  * The builder uses the Fluent Interface idiom to make the client code more
  * readable (we’ll see an example of this in a moment).
  */
+
 public class User {
 	private final String firstName; // required
 	private final String lastName; // required
