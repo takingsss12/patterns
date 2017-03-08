@@ -2,7 +2,7 @@ package brainatwork.pattern.creational.builder;
 
 /**
  * The builder uses the Fluent Interface idiom to make the client code more
- * readable (weíll see an example of this in a moment).
+ * readable (we‚Äôll see an example of this in a moment).
  */
 
 public class User {
@@ -53,9 +53,10 @@ public class User {
 	}
 
 	/**
-	 * The class is immutable. All attributes are final and theyíre set on the
+	 * The class is immutable. All attributes are final and they‚Äôre set on the
 	 * constructor. Additionally, we only provide getters for them.
 	 */
+	
 	public static class UserBuilder {
 		private final String firstName;
 		private final String lastName;
@@ -65,7 +66,7 @@ public class User {
 
 		/**
 		 * The builder constructor only receives the required attributes and
-		 * this attributes are the only ones that are defined ìfinalî on the
+		 * this attributes are the only ones that are defined ‚Äúfinal‚Äù on the
 		 * builder to ensure that their values are set on the constructor.
 		 */
 		public UserBuilder(String firstName, String lastName) {
@@ -95,17 +96,18 @@ public class User {
 			}
 			return user;
 		}
-//      example of not thread-safe code:
+		
+//      	example of not thread-safe code:
 //		public User build() {
 //			 if (age > 120) {
-//			   throw new IllegalStateException(ìAge out of rangeî); // bad, not thread-safe
+//			   throw new IllegalStateException(‚ÄúAge out of range‚Äù); // bad, not thread-safe
 //			 }
 //			 // This is the window of opportunity for a second thread to modify the value of age
 //			 return new User(this);
 //		}
 //		The reason for this is that, since the builder is not thread-safe, if we check the parameters before actually
 //		creating the object their values can be changed by another thread between the time the parameters are checked 
-//		and the time they are copied. This period of time is known as the ìwindow of vulnerabilityî.
+//		and the time they are copied. This period of time is known as the ‚Äúwindow of vulnerability‚Äù.
 
 	}
 }
