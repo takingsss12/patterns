@@ -1,7 +1,5 @@
 package brainatwork.pattern.architectural.mvp;
 
-import brainatwork.pattern.architectural.mvp.IContract.IView;
-import brainatwork.pattern.architectural.mvp.IContract.ActionListener;
 
 public class Main{
 	

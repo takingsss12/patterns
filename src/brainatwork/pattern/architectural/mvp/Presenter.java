@@ -1,5 +1,6 @@
 package brainatwork.pattern.architectural.mvp;
 
+
 public class Presenter implements IContract.ActionListener {
 	
 	private IContract.IView mView;
